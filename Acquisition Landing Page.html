@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandlogs – We're Joining Forces</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .brand-name {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #4a5568;
+            margin-bottom: 30px;
+        }
+        
+        .status-message {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .status-title {
+            font-size: 1.8rem;
+            color: #1e40af;
+            margin-bottom: 20px;
+        }
+        
+        .status-description {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 25px;
+        }
+        
+        .transition-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .point {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+        
+        .point h3 {
+            color: #1e40af;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .important-notice {
+            background-color: #fef3c7;
+            border: 1px solid #fbbf24;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+        
+        .important-notice h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+        
+        .contact-email {
+            color: #3b82f6;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+        .faq-section {
+            margin-top: 40px;
+        }
+        
+        .faq-title {
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            color: #4a5568;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            color: #718096;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .brand-name {
+                font-size: 2.2rem;
+            }
+            
+            .tagline {
+                font-size: 1.3rem;
+            }
+            
+            .transition-points {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="brand-name">Brandlogs</h1>
+            <p class="tagline">We're Joining Forces</p>
+        </header>
+        
+        <div class="status-message">
+            <h2 class="status-title">Our full website is temporarily offline</h2>
+            <p class="status-description">
+                We're currently transitioning to our new home. Thank you for your support — exciting things are ahead.
+            </p>
+            
+            <div class="transition-points">
+                <div class="point">
+                    <h3>Transition underway</h3>
+                    <p>We're moving Brandlogs into our new platform</p>
+                </div>
+                <div class="point">
+                    <h3>New site coming soon</h3>
+                    <p>We're working behind the scenes</p>
+                </div>
+                <div class="point">
+                    <h3>User accounts preserved</h3>
+                    <p>All your data will be migrated</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="important-notice">
+            <h3>Important Notice</h3>
+            <p>If you have any inquiries, please contact us at <a href="mailto:info@brandlogs.com" class="contact-email">info@brandlogs.com</a> and include your account email.</p>
+        </div>
+        
+        <section class="faq-section">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">Q: Will my account data be preserved?</p>
+                <p class="faq-answer">A: Yes — accounts and subscriptions will be migrated. Contact support for urgent issues.</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">Q: When will the new site be live?</p>
+                <p class="faq-answer">A: We expect the transition to finish shortly.</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; Brandlogs. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
